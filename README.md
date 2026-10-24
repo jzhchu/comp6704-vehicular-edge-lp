@@ -2,10 +2,9 @@
 
 Course project for **COMP6704: Advanced Topics in Optimization (Fall 2026)**.
 
-This repository contains the model, algorithm implementations, experiment configurations, saved inputs, raw solver outputs, figures, and report for a continuous workload allocation problem in vehicular edge computing. It compares three educational LP implementations with a production solver and a greedy application baseline.
+This repository contains the model, algorithm implementations, experiment configurations, saved inputs, raw solver outputs, and figures for a continuous workload allocation problem in vehicular edge computing. It compares three educational LP implementations with a production solver and a greedy application baseline.
 
 - **Repository:** https://github.com/jzhchu/comp6704-vehicular-edge-lp
-- **Report:** [REPORT.md](REPORT.md) (Chinese; includes the formulation, dual, related work, algorithm analysis, experimental results, and references).
 - **Formal configuration:** [configs/formal_suite.json](configs/formal_suite.json).
 - **Saved validation:** [experiments/formal/audit.json](experiments/formal/audit.json).
 
@@ -17,15 +16,15 @@ The assignment requires multiple algorithm implementations, performance comparis
 
 | Course component | Repository evidence |
 | --- | --- |
-| Background survey and motivation | Sections 1-2 and references in [REPORT.md](REPORT.md) |
-| Mathematical problem formulation | Section 3 of the report; `minimal_model.py` |
-| Algorithm design and implementation | Section 4 of the report; `algorithms.py` |
+| Background and motivation | Project scope in Section 1; background sources in Section 12 |
+| Mathematical problem formulation | Section 2 of this README; `minimal_model.py` |
+| Algorithm design and implementation | Section 3 of this README; `algorithms.py` |
 | Convergence, solution quality, efficiency, and stability | Formal traces, `runs.csv`, validation results, and generated figures |
 | Statistical analysis, ablations, and sensitivity | `analyze_formal.py`, `report_analysis.py`, scaling/budget experiments, and capacity perturbations |
 | Code quality and reproducibility | Pinned dependencies, tests, fixed configurations, saved inputs, source snapshots, hashes, and the commands below |
-| Repository link in the report | The repository URL is included in the report and in an abstract footnote |
+| Repository link for submission | Include this repository URL in the submitted report's abstract or a footnote |
 
-The assignment also asks teams to list all names and student IDs at the start of the report, and gives the guideline that each member independently implement at least one algorithm. Team identity fields remain blank in the report as requested; the team must fill them and accurately describe individual contributions before submission. This repository does not establish who independently implemented each method.
+The assignment also asks teams to list all names and student IDs at the start of the report, and gives the guideline that each member independently implement at least one algorithm. The team must provide those details and accurately describe individual contributions in the final submission. This repository does not establish who independently implemented each method.
 
 The final Canvas submission is a **single PDF combining the report and slides**, named with the group ID, below 40 MB. The report limit is 15 pages. The GitHub repository supplements that submission; Markdown alone is not the required final submission format.
 
@@ -164,9 +163,9 @@ The saved formal audit reports:
 | Diagonal PDHG | 310 / 450 | 139 iteration-limit runs and 1 time-limit run retained |
 | Greedy | 270 / 270 | Business feasibility only |
 
-Across the 90 main input instances, mean service fractions were **87.93%** for reference LP allocation and **75.81%** for greedy. The mean per-instance greedy cost gap relative to the optimum was **127.34%**. These statistics have different definitions: demand-normalized cost components and mean relative objective gaps must not be interchanged. See the report and `experiments/report_analysis/paper_statistics.json` for details.
+Across the 90 main input instances, mean service fractions were **87.93%** for reference LP allocation and **75.81%** for greedy. The mean per-instance greedy cost gap relative to the optimum was **127.34%**. These statistics have different definitions: demand-normalized cost components and mean relative objective gaps must not be interchanged. See `experiments/report_analysis/paper_statistics.json` for details.
 
-| Report evidence | Files |
+| Experimental evidence | Files |
 | --- | --- |
 | Scaling of runtime and pass rate | `experiments/formal/figures/01_scale.{png,svg}` |
 | Capacity and connectivity | `experiments/formal/figures/02_resources_connectivity.{png,svg}` |
@@ -200,7 +199,6 @@ Unlike the formal runner, the earlier runner can overwrite files in an existing 
 ```text
 .
 ├── README.md                    English reproduction guide
-├── REPORT.md                    Complete project report (Chinese)
 ├── requirements.txt             Exact package versions
 ├── minimal_model.py             Input checks, model, reference, greedy, outputs
 ├── algorithms.py                Shared standard form and three educational solvers
@@ -221,7 +219,7 @@ Unlike the formal runner, the earlier runner can overwrite files in an existing 
 ├── results/                     Archived analytical example outputs
 └── experiments/
     ├── formal/                  Canonical formal inputs, traces, figures, snapshots
-    ├── report_analysis/         Additional evidence used in the report
+    ├── report_analysis/         Additional statistics and experimental figures
     ├── batch/                   Earlier benchmark and source snapshot
     └── pilot/                   Earlier pilot outputs
 ```
@@ -251,7 +249,7 @@ The educational solvers contain monitoring overhead and simpler linear algebra t
 
 ## 12. References and implementation context
 
-Full bibliographic information and the relationship to this project appear in the report. Key sources include:
+Key background and implementation sources include:
 
 - [Boyd and Vandenberghe, Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/) - optimization and duality background.
 - [Bland (1977)](https://doi.org/10.1287/moor.2.2.103) - anti-cycling pivot rules.
