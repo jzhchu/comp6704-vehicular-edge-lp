@@ -1,0 +1,20 @@
+[
+  {
+    "fraction": 0.001,
+    "count": 40,
+    "exact_to_1e_6": 40,
+    "maximum_error_over_baseline": 2.527631236766706e-16
+  },
+  {
+    "fraction": 0.01,
+    "count": 40,
+    "exact_to_1e_6": 40,
+    "maximum_error_over_baseline": 2.0343422206092738e-16
+  },
+  {
+    "fraction": 0.05,
+    "count": 40,
+    "exact_to_1e_6": 31,
+    "maximum_error_over_baseline": 0.0009115410792900682
+  }
+]

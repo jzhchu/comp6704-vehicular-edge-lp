@@ -1,0 +1,100 @@
+{
+  "method": "greedy",
+  "status": "feasible_baseline",
+  "iterations": 0,
+  "seconds": 6.995801231823862e-05,
+  "metrics": {
+    "objective": 55.0,
+    "dual_objective": 0.0,
+    "primal_residual": 0.0,
+    "dual_residual": 0.0,
+    "duality_gap": 0.9821428571428571,
+    "nonnegative_violation": 0.0,
+    "row_relative_residual": 0.0,
+    "certificate_score": 0.9821428571428571,
+    "absolute_business_violation": 0.0,
+    "satisfaction": 1.0
+  },
+  "allocation": [
+    [
+      5.0,
+      0.0
+    ],
+    [
+      0.0,
+      5.0
+    ]
+  ],
+  "unserved": [
+    0.0,
+    0.0
+  ],
+  "raw_primal": [
+    5.0,
+    0.0,
+    0.0,
+    5.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "raw_dual": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "business_audit": {
+    "passed": true,
+    "absolute_tolerance": 1e-08,
+    "residuals": {
+      "demand_equality_max_abs": 0.0,
+      "compute_capacity_max_violation": 0.0,
+      "upload_capacity_max_violation": 0.0,
+      "nonnegativity_max_violation": 0.0,
+      "disconnected_edge_max_abs": 0.0
+    },
+    "processing_cost": 55.0,
+    "unserved_penalty_cost": 0.0,
+    "objective": 55.0,
+    "demand_satisfaction_rate": 1.0,
+    "compute_usage": [
+      5.0,
+      5.0
+    ],
+    "upload_usage": [
+      5.0,
+      5.0
+    ]
+  },
+  "details": {
+    "certificate_available": false
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "seconds": 6.966700311750174e-05,
+      "objective": 55.0,
+      "dual_objective": 0.0,
+      "primal_residual": 0.0,
+      "dual_residual": 0.0,
+      "duality_gap": 0.9821428571428571,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.9821428571428571,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 1.0
+    }
+  ],
+  "reference_objective": 15.5,
+  "reference_gap": 2.5483870967741935,
+  "passed": true,
+  "business_feasibility": 0.0,
+  "repetition": 1,
+  "instance": "two_vehicles_two_rsus"
+}

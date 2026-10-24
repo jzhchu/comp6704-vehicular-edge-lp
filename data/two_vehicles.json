@@ -1,0 +1,11 @@
+{
+  "name": "two_vehicles_two_rsus",
+  "description": "Two vehicles, two RSUs, divisible workload, fixed resource budgets.",
+  "demand": [5.0, 5.0],
+  "compute_per_workload": [1.0, 1.0],
+  "upload_per_workload": [1.0, 1.0],
+  "compute_capacity": [5.0, 5.0],
+  "upload_capacity": [5.0, 5.0],
+  "cost": [[1.0, 2.0], [1.1, 10.0]],
+  "unserved_penalty": [20.0, 20.0]
+}

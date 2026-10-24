@@ -1,0 +1,17 @@
+{
+  "audit_passed": true,
+  "verified_inputs": 28,
+  "verified_source_hashes": 4,
+  "verified_timed_solves": 420,
+  "algorithm_pass_counts": {
+    "simplex": 84,
+    "pdhg": 66,
+    "greedy": 84,
+    "ipm": 84,
+    "highs": 84
+  },
+  "algorithm_nonpass_counts": {
+    "pdhg": 18
+  },
+  "note": "Audit validates recorded data and labels; non-converged solves remain non-converged."
+}

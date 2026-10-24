@@ -1,0 +1,157 @@
+{
+  "method": "simplex",
+  "status": "converged",
+  "iterations": 4,
+  "seconds": 0.0003440420259721577,
+  "metrics": {
+    "objective": 15.5,
+    "dual_objective": 15.5,
+    "primal_residual": 0.0,
+    "dual_residual": 0.0,
+    "duality_gap": 0.0,
+    "nonnegative_violation": 0.0,
+    "row_relative_residual": 0.0,
+    "certificate_score": 0.0,
+    "absolute_business_violation": 0.0,
+    "satisfaction": 1.0
+  },
+  "allocation": [
+    [
+      0.0,
+      5.0
+    ],
+    [
+      5.0,
+      0.0
+    ]
+  ],
+  "unserved": [
+    0.0,
+    0.0
+  ],
+  "raw_primal": [
+    0.0,
+    5.0,
+    5.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "raw_dual": [
+    2.0,
+    10.0,
+    -8.9,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "business_audit": {
+    "passed": true,
+    "absolute_tolerance": 1e-08,
+    "residuals": {
+      "demand_equality_max_abs": 0.0,
+      "compute_capacity_max_violation": 0.0,
+      "upload_capacity_max_violation": 0.0,
+      "nonnegativity_max_violation": 0.0,
+      "disconnected_edge_max_abs": 0.0
+    },
+    "processing_cost": 15.5,
+    "unserved_penalty_cost": 0.0,
+    "objective": 15.5,
+    "demand_satisfaction_rate": 1.0,
+    "compute_usage": [
+      5.0,
+      5.0
+    ],
+    "upload_usage": [
+      5.0,
+      5.0
+    ]
+  },
+  "details": {
+    "entering_rule": "Dantzig; Bland after repeated basis",
+    "bland_activated": false
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "seconds": 9.170902194455266e-05,
+      "objective": 200.0,
+      "dual_objective": 200.0,
+      "primal_residual": 0.0,
+      "dual_residual": 0.9047619047619048,
+      "duality_gap": 0.0,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.9047619047619048,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 0.0
+    },
+    {
+      "iteration": 1,
+      "seconds": 0.0001670840138103813,
+      "objective": 105.0,
+      "dual_objective": 105.0,
+      "primal_residual": 0.0,
+      "dual_residual": 0.8999999999999999,
+      "duality_gap": 0.0,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.8999999999999999,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 0.5
+    },
+    {
+      "iteration": 2,
+      "seconds": 0.00022870901739224792,
+      "objective": 105.0,
+      "dual_objective": 105.0,
+      "primal_residual": 0.0,
+      "dual_residual": 0.8523809523809524,
+      "duality_gap": 0.0,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.8523809523809524,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 0.5
+    },
+    {
+      "iteration": 3,
+      "seconds": 0.00028608401771634817,
+      "objective": 15.5,
+      "dual_objective": 15.5,
+      "primal_residual": 0.0,
+      "dual_residual": 0.47619047619047616,
+      "duality_gap": 0.0,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.47619047619047616,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 1.0
+    },
+    {
+      "iteration": 4,
+      "seconds": 0.0003436670231167227,
+      "objective": 15.5,
+      "dual_objective": 15.5,
+      "primal_residual": 0.0,
+      "dual_residual": 0.0,
+      "duality_gap": 0.0,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 0.0,
+      "certificate_score": 0.0,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 1.0
+    }
+  ],
+  "reference_objective": 15.5,
+  "reference_gap": 0.0,
+  "passed": true,
+  "business_feasibility": 0.0,
+  "repetition": 2,
+  "instance": "two_vehicles_two_rsus"
+}

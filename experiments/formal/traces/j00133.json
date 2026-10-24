@@ -1,0 +1,193 @@
+{
+  "method": "greedy",
+  "status": "feasible_baseline",
+  "iterations": 0,
+  "seconds": 0.00011679099407047033,
+  "metrics": {
+    "objective": 230.24023007024726,
+    "dual_objective": 0.0,
+    "primal_residual": 6.748595614283632e-17,
+    "dual_residual": 0.0,
+    "duality_gap": 0.9956754929724113,
+    "nonnegative_violation": 0.0,
+    "row_relative_residual": 1.0516549265165581e-16,
+    "certificate_score": 0.9956754929724113,
+    "absolute_business_violation": 0.0,
+    "satisfaction": 0.5691860341720854
+  },
+  "allocation": [
+    [
+      0.0,
+      2.013654709749211,
+      0.0
+    ],
+    [
+      0.0,
+      3.110155342585703,
+      0.0
+    ],
+    [
+      0.0,
+      1.5591638845464573,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.816689719116706,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.1830787956894318
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.8056473624716296
+    ],
+    [
+      0.0,
+      0.0,
+      1.6595915191411759
+    ],
+    [
+      1.1553081928672722,
+      0.0,
+      0.0
+    ]
+  ],
+  "unserved": [
+    0.0,
+    0.0,
+    2.4847823504552924,
+    3.539044250163888,
+    0.0,
+    0.0,
+    3.092661764370483,
+    0.0,
+    1.7095975106348291,
+    0.0
+  ],
+  "raw_primal": [
+    2.013654709749211,
+    3.110155342585703,
+    1.5591638845464573,
+    0.0,
+    1.816689719116706,
+    1.1830787956894318,
+    0.0,
+    1.8056473624716296,
+    1.6595915191411759,
+    1.1553081928672722,
+    0.0,
+    0.0,
+    2.4847823504552924,
+    3.539044250163888,
+    0.0,
+    0.0,
+    3.092661764370483,
+    0.0,
+    1.7095975106348291,
+    0.0,
+    7.0769897241669915,
+    0.0,
+    6.265498476933192,
+    4.982944100060703,
+    1.8042871445922755,
+    4.440892098500626e-16
+  ],
+  "raw_dual": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "business_audit": {
+    "passed": true,
+    "absolute_tolerance": 1e-08,
+    "residuals": {
+      "demand_equality_max_abs": 0.0,
+      "compute_capacity_max_violation": 0.0,
+      "upload_capacity_max_violation": 0.0,
+      "nonnegativity_max_violation": 0.0,
+      "disconnected_edge_max_abs": 0.0
+    },
+    "processing_cost": 13.718512557757425,
+    "unserved_penalty_cost": 216.52171751248983,
+    "objective": 230.24023007024726,
+    "demand_satisfaction_rate": 0.5691860341720854,
+    "compute_usage": [
+      4.243746883728398,
+      8.274428656441112,
+      5.895438560400404
+    ],
+    "upload_usage": [
+      2.462586817976041,
+      3.2501005414995836,
+      3.8128660713118654
+    ]
+  },
+  "details": {
+    "certificate_available": false
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "seconds": 0.00011641602031886578,
+      "objective": 230.24023007024726,
+      "dual_objective": 0.0,
+      "primal_residual": 6.748595614283632e-17,
+      "dual_residual": 0.0,
+      "duality_gap": 0.9956754929724113,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 1.0516549265165581e-16,
+      "certificate_score": 0.9956754929724113,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 0.5691860341720854
+    }
+  ],
+  "reference_objective": 205.88456837453032,
+  "reference_gap": 0.11829765527356517,
+  "business_feasibility": 0.0,
+  "passed": true,
+  "job": {
+    "job_id": "j00133",
+    "group": "scale",
+    "instance": "n10_m3_c1_b1_r0.25_s71",
+    "vehicles": 10,
+    "rsus": 3,
+    "seed": 71,
+    "rho_compute": 1.0,
+    "rho_upload": 1.0,
+    "radius": 0.25,
+    "method": "greedy",
+    "repetition": 0,
+    "scaling": true,
+    "tolerance": 1e-05,
+    "max_iterations": 0,
+    "time_limit_seconds": 8.0
+  }
+}

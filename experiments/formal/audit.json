@@ -1,0 +1,28 @@
+{
+  "audit_passed": true,
+  "verified_inputs": 90,
+  "verified_timed_solves": 1980,
+  "verified_reference_solves": 90,
+  "verified_sensitivity_solves": 130,
+  "verified_source_hashes": 16,
+  "algorithm_pass_counts": {
+    "ipm": 420,
+    "simplex": 420,
+    "highs": 420,
+    "pdhg": 310,
+    "greedy": 270
+  },
+  "algorithm_nonpass_counts": {
+    "pdhg": 140
+  },
+  "statuses": {
+    "ipm:converged": 420,
+    "simplex:converged": 420,
+    "highs:converged": 420,
+    "pdhg:converged": 310,
+    "greedy:feasible_baseline": 270,
+    "pdhg:iteration_limit": 139,
+    "pdhg:time_limit": 1
+  },
+  "note": "All physical allocations, raw-unit certificates, reference objectives and labels recomputed. Non-convergence remains recorded as failure."
+}

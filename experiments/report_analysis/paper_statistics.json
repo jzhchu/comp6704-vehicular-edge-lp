@@ -1,0 +1,127 @@
+{
+  "averages": {
+    "highs": {
+      "service_cost_per_demand": 0.805719865501724,
+      "penalty_per_demand": 2.4145835142947583,
+      "objective_per_demand": 3.2203033797964817,
+      "satisfaction": 0.8792708242852623
+    },
+    "greedy": {
+      "service_cost_per_demand": 0.6889512915361673,
+      "penalty_per_demand": 4.838919370428868,
+      "objective_per_demand": 5.527870661965036,
+      "satisfaction": 0.7580540314785565
+    }
+  },
+  "greedy_minus_lp": {
+    "service_cost_per_demand": -0.11676857396555673,
+    "penalty_per_demand": 2.4243358561341095,
+    "objective_per_demand": 2.307567282168554,
+    "satisfaction": -0.12121679280670572
+  },
+  "penalty_share_of_normalized_objective_difference": 1.050602456911168,
+  "cost_gap_statistics": {
+    "greedy_mean_relative_cost_gap": 1.2733647621050899,
+    "greedy_median_relative_cost_gap": 0.939431457196839,
+    "greedy_seed_cluster_bootstrap_95_percentile_interval": [
+      1.1490954830722875,
+      1.421383916839807
+    ],
+    "independent_seed_clusters": 5,
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 6704,
+    "note": "Seeds are resampled as clusters; repeated trials and paired configurations are not treated as independent observations. Five clusters provide descriptive uncertainty only."
+  },
+  "normalized_case_count": 90,
+  "all_counts": {
+    "highs": {
+      "passes": 420,
+      "trials": 420
+    },
+    "simplex": {
+      "passes": 420,
+      "trials": 420
+    },
+    "ipm": {
+      "passes": 420,
+      "trials": 420
+    },
+    "pdhg": {
+      "passes": 310,
+      "trials": 450
+    },
+    "greedy": {
+      "passes": 270,
+      "trials": 270
+    }
+  },
+  "main_counts": {
+    "highs": {
+      "passes": 270,
+      "trials": 270
+    },
+    "simplex": {
+      "passes": 270,
+      "trials": 270
+    },
+    "ipm": {
+      "passes": 270,
+      "trials": 270
+    },
+    "pdhg": {
+      "passes": 201,
+      "trials": 270
+    },
+    "greedy": {
+      "passes": 270,
+      "trials": 270
+    }
+  },
+  "main_passed_max_reference_gap": {
+    "highs": 0.0,
+    "simplex": 6.4545150473031784e-09,
+    "ipm": 1.488350596756131e-05,
+    "pdhg": 2.1176640520755045e-05
+  },
+  "representative_instance": "n100_m8_c1_b1_r0.25_s11",
+  "representative_curves": [
+    {
+      "label": "simplex",
+      "job_id": "j01416",
+      "status": "converged",
+      "iterations": 236,
+      "seconds": 0.03561795799760148,
+      "final_certificate": 3.753611178494577e-16
+    },
+    {
+      "label": "ipm",
+      "job_id": "j00061",
+      "status": "converged",
+      "iterations": 13,
+      "seconds": 0.003052124986425042,
+      "final_certificate": 4.831563527008667e-07
+    },
+    {
+      "label": "pdhg 100k",
+      "job_id": "j00712",
+      "status": "iteration_limit",
+      "iterations": 100000,
+      "seconds": 0.9029777080286294,
+      "final_certificate": 5.449664215701036e-05
+    },
+    {
+      "label": "pdhg 1M",
+      "job_id": "j01435",
+      "status": "converged",
+      "iterations": 342550,
+      "seconds": 3.1618078750325367,
+      "final_certificate": 9.834640661462604e-06
+    }
+  ],
+  "monotonicity": {
+    "paired_sequences": 15,
+    "checked_steps": 55,
+    "passed": true
+  },
+  "note": "Post-processing only. Each of the 90 different main-experiment inputs has equal weight. Costs are divided by each input's total demand before averaging; relative cost gaps are averaged separately."
+}

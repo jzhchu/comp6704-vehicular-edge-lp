@@ -1,0 +1,194 @@
+{
+  "method": "highs",
+  "status": "converged",
+  "iterations": 3,
+  "seconds": 0.000796667009126395,
+  "metrics": {
+    "objective": 146.62691372879306,
+    "dual_objective": 146.62691372879308,
+    "primal_residual": 1.28309397520385e-16,
+    "dual_residual": 1.691768418476429e-16,
+    "duality_gap": 9.658909002466833e-17,
+    "nonnegative_violation": 0.0,
+    "row_relative_residual": 1.8430118635228473e-16,
+    "certificate_score": 1.8430118635228473e-16,
+    "absolute_business_violation": 4.440892098500626e-16,
+    "satisfaction": 0.7879033624786375
+  },
+  "allocation": [
+    [
+      0.0,
+      0.0,
+      3.775732322629457
+    ],
+    [
+      0.0,
+      0.0,
+      3.5658328835129223
+    ],
+    [
+      0.0,
+      1.514576897270545,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.48741801677697283
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      4.413828423860643,
+      0.0,
+      0.0
+    ],
+    [
+      1.8071165377616252,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.872074548342944,
+      0.0
+    ],
+    [
+      0.0,
+      3.866338543694331,
+      0.0
+    ],
+    [
+      0.0,
+      1.3623142446070868,
+      0.0
+    ]
+  ],
+  "unserved": [
+    0.0,
+    0.0,
+    0.0,
+    0.9674141837483446,
+    3.6133820853383494,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5204844380700133
+  ],
+  "raw_primal": [
+    3.775732322629457,
+    3.5658328835129223,
+    1.514576897270545,
+    0.48741801677697283,
+    0.0,
+    4.413828423860643,
+    1.8071165377616252,
+    1.872074548342944,
+    3.866338543694331,
+    1.3623142446070868,
+    0.0,
+    0.0,
+    0.0,
+    0.9674141837483446,
+    3.6133820853383494,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5204844380700133,
+    2.276719902304931,
+    1.331056627883698,
+    3.4304442364919443,
+    5.523421778896856,
+    0.0,
+    0.0
+  ],
+  "raw_dual": [
+    5.853936182054334,
+    16.48503826758212,
+    15.929729395617395,
+    20.000000000000004,
+    20.000000000000004,
+    1.3073604867174882,
+    1.1607544867658919,
+    10.160858987046621,
+    17.726346386675498,
+    20.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -23.826497032956613,
+    -21.261082195880594
+  ],
+  "business_audit": {
+    "passed": true,
+    "absolute_tolerance": 1e-08,
+    "residuals": {
+      "demand_equality_max_abs": 4.440892098500626e-16,
+      "compute_capacity_max_violation": 0.0,
+      "upload_capacity_max_violation": 0.0,
+      "nonnegativity_max_violation": 0.0,
+      "disconnected_edge_max_abs": 0.0
+    },
+    "processing_cost": 24.60129958565892,
+    "unserved_penalty_cost": 122.02561414313416,
+    "objective": 146.62691372879308,
+    "demand_satisfaction_rate": 0.7879033624786375,
+    "compute_usage": [
+      7.151021216868152,
+      11.513267121809179,
+      8.466064714565743
+    ],
+    "upload_usage": [
+      2.486976840950459,
+      5.52461862388778,
+      3.819168217411285
+    ]
+  },
+  "details": {
+    "presolve": true,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "history": [
+    {
+      "iteration": 3,
+      "seconds": 0.000795917003415525,
+      "objective": 146.62691372879306,
+      "dual_objective": 146.62691372879308,
+      "primal_residual": 1.28309397520385e-16,
+      "dual_residual": 1.691768418476429e-16,
+      "duality_gap": 9.658909002466833e-17,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 1.8430118635228473e-16,
+      "certificate_score": 1.8430118635228473e-16,
+      "absolute_business_violation": 4.440892098500626e-16,
+      "satisfaction": 0.7879033624786375
+    }
+  ],
+  "reference_objective": 146.62691372879306,
+  "reference_gap": 0.0,
+  "business_feasibility": 1.143734831865847e-16,
+  "passed": true,
+  "job": {
+    "job_id": "j00347",
+    "group": "scale",
+    "instance": "n10_m3_c1_b1_r0.25_s23",
+    "vehicles": 10,
+    "rsus": 3,
+    "seed": 23,
+    "rho_compute": 1.0,
+    "rho_upload": 1.0,
+    "radius": 0.25,
+    "method": "highs",
+    "repetition": 2,
+    "scaling": true,
+    "tolerance": 1e-05,
+    "max_iterations": 0,
+    "time_limit_seconds": 8.0
+  }
+}

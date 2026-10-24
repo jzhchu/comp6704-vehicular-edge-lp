@@ -1,0 +1,98 @@
+{
+  "instance_name": "two_vehicles_two_rsus",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "reference": {
+    "method": "SciPy linprog / HiGHS dual simplex (highs-ds)",
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_objective": 15.5,
+    "solver_seconds": 0.004307916999096051,
+    "solver_iterations": 3,
+    "variables": 6,
+    "equality_constraints": 2,
+    "capacity_constraints": 4,
+    "allocation": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        0.0
+      ]
+    ],
+    "unserved": [
+      0.0,
+      0.0
+    ],
+    "verification": {
+      "passed": true,
+      "absolute_tolerance": 1e-08,
+      "residuals": {
+        "demand_equality_max_abs": 0.0,
+        "compute_capacity_max_violation": 0.0,
+        "upload_capacity_max_violation": 0.0,
+        "nonnegativity_max_violation": 0.0,
+        "disconnected_edge_max_abs": 0.0
+      },
+      "processing_cost": 15.5,
+      "unserved_penalty_cost": 0.0,
+      "objective": 15.5,
+      "demand_satisfaction_rate": 1.0,
+      "compute_usage": [
+        5.0,
+        5.0
+      ],
+      "upload_usage": [
+        5.0,
+        5.0
+      ]
+    }
+  },
+  "greedy": {
+    "method": "Penalty-first, lowest-cost feasible greedy",
+    "allocation": [
+      [
+        5.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "unserved": [
+      0.0,
+      0.0
+    ],
+    "verification": {
+      "passed": true,
+      "absolute_tolerance": 1e-08,
+      "residuals": {
+        "demand_equality_max_abs": 0.0,
+        "compute_capacity_max_violation": 0.0,
+        "upload_capacity_max_violation": 0.0,
+        "nonnegativity_max_violation": 0.0,
+        "disconnected_edge_max_abs": 0.0
+      },
+      "processing_cost": 55.0,
+      "unserved_penalty_cost": 0.0,
+      "objective": 55.0,
+      "demand_satisfaction_rate": 1.0,
+      "compute_usage": [
+        5.0,
+        5.0
+      ],
+      "upload_usage": [
+        5.0,
+        5.0
+      ]
+    }
+  },
+  "note": "Single-run runtime is diagnostic, not a benchmark result. Input is synthetic."
+}

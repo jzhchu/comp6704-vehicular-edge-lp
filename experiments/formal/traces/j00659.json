@@ -1,0 +1,194 @@
+{
+  "method": "highs",
+  "status": "converged",
+  "iterations": 3,
+  "seconds": 0.000650790985673666,
+  "metrics": {
+    "objective": 205.88456837453032,
+    "dual_objective": 205.88456837453037,
+    "primal_residual": 6.748595614283632e-17,
+    "dual_residual": 6.344131569286608e-17,
+    "duality_gap": 1.3771237672589234e-16,
+    "nonnegative_violation": 0.0,
+    "row_relative_residual": 1.0516549265165581e-16,
+    "certificate_score": 1.3771237672589234e-16,
+    "absolute_business_violation": 0.0,
+    "satisfaction": 0.6192246551931381
+  },
+  "allocation": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      3.110155342585703,
+      0.0
+    ],
+    [
+      0.0,
+      4.04394623500175,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.816689719116706,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.1830787956894318
+    ],
+    [
+      0.0,
+      0.786311651519956,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.8056473624716296
+    ],
+    [
+      0.0,
+      0.0,
+      1.659591519141176
+    ],
+    [
+      1.1553081928672722,
+      0.0,
+      0.0
+    ]
+  ],
+  "unserved": [
+    2.013654709749211,
+    0.0,
+    0.0,
+    3.539044250163888,
+    0.0,
+    0.0,
+    2.3063501128505273,
+    0.0,
+    1.709597510634829,
+    0.0
+  ],
+  "raw_primal": [
+    0.0,
+    3.110155342585703,
+    4.04394623500175,
+    0.0,
+    1.816689719116706,
+    1.1830787956894318,
+    0.786311651519956,
+    1.8056473624716296,
+    1.659591519141176,
+    1.1553081928672722,
+    2.013654709749211,
+    0.0,
+    0.0,
+    3.539044250163888,
+    0.0,
+    0.0,
+    2.3063501128505273,
+    0.0,
+    1.709597510634829,
+    0.0,
+    7.0769897241669915,
+    0.0,
+    6.265498476933192,
+    4.9829441000607035,
+    0.5332581642140745,
+    0.0
+  ],
+  "raw_dual": [
+    20.0,
+    16.359125320021768,
+    14.764101630801116,
+    20.0,
+    1.262299312565133,
+    13.616812899299767,
+    20.0,
+    17.156702989890295,
+    20.0,
+    1.3730382151860197,
+    -0.0,
+    -14.56592837835966,
+    -0.0,
+    -0.0,
+    -0.0,
+    -19.784212432995623
+  ],
+  "business_audit": {
+    "passed": true,
+    "absolute_tolerance": 1e-08,
+    "residuals": {
+      "demand_equality_max_abs": 0.0,
+      "compute_capacity_max_violation": 0.0,
+      "upload_capacity_max_violation": 0.0,
+      "nonnegativity_max_violation": 0.0,
+      "disconnected_edge_max_abs": 0.0
+    },
+    "processing_cost": 14.511636706561232,
+    "unserved_penalty_cost": 191.3729316679691,
+    "objective": 205.88456837453035,
+    "demand_satisfaction_rate": 0.6192246551931381,
+    "compute_usage": [
+      4.243746883728398,
+      8.274428656441112,
+      5.895438560400404
+    ],
+    "upload_usage": [
+      2.462586817976041,
+      4.521129521877784,
+      3.812866071311866
+    ]
+  },
+  "details": {
+    "presolve": true,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "history": [
+    {
+      "iteration": 3,
+      "seconds": 0.0006501660100184381,
+      "objective": 205.88456837453032,
+      "dual_objective": 205.88456837453037,
+      "primal_residual": 6.748595614283632e-17,
+      "dual_residual": 6.344131569286608e-17,
+      "duality_gap": 1.3771237672589234e-16,
+      "nonnegative_violation": 0.0,
+      "row_relative_residual": 1.0516549265165581e-16,
+      "certificate_score": 1.3771237672589234e-16,
+      "absolute_business_violation": 0.0,
+      "satisfaction": 0.6192246551931381
+    }
+  ],
+  "reference_objective": 205.88456837453032,
+  "reference_gap": 0.0,
+  "business_feasibility": 0.0,
+  "passed": true,
+  "job": {
+    "job_id": "j00659",
+    "group": "scale",
+    "instance": "n10_m3_c1_b1_r0.25_s71",
+    "vehicles": 10,
+    "rsus": 3,
+    "seed": 71,
+    "rho_compute": 1.0,
+    "rho_upload": 1.0,
+    "radius": 0.25,
+    "method": "highs",
+    "repetition": 2,
+    "scaling": true,
+    "tolerance": 1e-05,
+    "max_iterations": 0,
+    "time_limit_seconds": 8.0
+  }
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.DS_Store
+.mplconfig/
+.env
+.env.*
+work/
+results_local/
+results_custom/
+experiments/formal_smoke*/
+experiments/formal_rerun*/
+experiments/report_analysis_rerun*/
+experiments/report_analysis_rebuilt*/
+experiments/batch_rerun*/

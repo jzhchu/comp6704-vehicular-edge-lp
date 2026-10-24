@@ -1,0 +1,13 @@
+method,vehicle,rsu,workload
+reference,1,1,0.0
+reference,1,2,5.0
+reference,2,1,5.0
+reference,2,2,0.0
+reference,1,unserved,0.0
+reference,2,unserved,0.0
+greedy,1,1,5.0
+greedy,1,2,0.0
+greedy,2,1,0.0
+greedy,2,2,5.0
+greedy,1,unserved,0.0
+greedy,2,unserved,0.0

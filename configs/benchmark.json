@@ -1,0 +1,15 @@
+{
+  "seeds": [11, 23, 37],
+  "execution_order_seed": 20261017,
+  "repetitions": 3,
+  "tolerance": 0.00001,
+  "time_limit_seconds": 8.0,
+  "methods": ["highs", "simplex", "ipm", "pdhg", "greedy"],
+  "scale_cases": [[10, 3], [30, 4], [60, 6], [100, 8]],
+  "capacity_vehicle_count": 30,
+  "capacity_rsu_count": 4,
+  "capacity_ratios": [0.6, 1.0, 1.4],
+  "other_capacity_ratio": 1.4,
+  "radius": 0.25,
+  "include_analytical_example": true
+}

@@ -1,0 +1,12 @@
+{
+  "greedy_mean_relative_cost_gap": 1.2733647621050899,
+  "greedy_median_relative_cost_gap": 0.939431457196839,
+  "greedy_seed_cluster_bootstrap_95_percentile_interval": [
+    1.1490954830722875,
+    1.421383916839807
+  ],
+  "independent_seed_clusters": 5,
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 6704,
+  "note": "Seeds are resampled as clusters; repeated trials and paired configurations are not treated as independent observations. Five clusters provide descriptive uncertainty only."
+}
